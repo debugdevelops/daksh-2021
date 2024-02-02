@@ -1,0 +1,88 @@
+[
+    {
+        "Name": "Game Of Genes",
+        "icon": "fas fa-dna",
+        "Date": "Nov 1",
+        "preq": " Zoom and Google meet",
+        "Desc": " Would you like to try your hand at creating a brand new species ? Come along, put together different genes - see if you can build a fully functional organism! Kindle your inner Frankenstein.",
+        "contact": ["Sreevatshan", "9566345894", "Lalitha","6379603262"],
+        "Round1": "Every existing organism in this world are made of millions of genes and genome. Here is an opportunity to build your own organism with the given set of genes. Come up with the best combo of genes to build up efficient proteins!!",
+        "Round2": "Critics are very important for any debate. Challenge the ideas of your peers and defend your model without fears. Here is an open arena for exchange for ideas",
+        "Register": "https://forms.gle/ncyRYT2P2qCLsuD27"
+    },
+    {
+        "Name": "Predict the Culprit",
+        "icon": "fas fa-robot",
+        "Date":"Nov 1",
+        "preq": "Basic of ML",
+        "Desc" : "Put on your deerstalker and bring along trusty Dr. Watson - it's time to step into Sherlock's shoes! Here's a crime for you to solve - which has a virtual twist to it! Interview suspects virtually and find the culprit. It's time to put your mind palace to work! ",
+        "contact": ["Prarthana", "9629624114", "Meghana","7402358800"],
+        "Round1": "Pre-Emptively submit 10-15 questions that you’d ask the accused based on the crime scene given. Interrogate the accused on the day of the event and get your questions answered.",
+        "Round2": "Based on the dataset provided by us, design an ML model to predict if the accused is the criminal. Present your model and explain the reason behind using it.",
+        "Register" : "https://forms.gle/9FA3DcHvk6dGTzDZ7"
+    },
+    {
+        "Name": "Electrathlon",
+        "icon": "fas fa-bolt",
+        "Date":"Nov 1",
+        "preq": "Basic electrical knowledge",
+        "Desc" : "Let's have fun in the world of electricity! Decipher the puzzles. Untangle the convolutions. All in the ELECTRATHLON way. Put on your thinking caps, puzzle masters! This one's going to need a lot of mind sparks!",
+        "contact": ["Samyuktha", "9597755070", "Krishna sai","8500251474"],
+        "Round1": "There will be a total of 4 rounds: Jumbled words, crossword, Pictionary and a simple Bingo. All levels contain equal weightage. The basis of decision will be points or the shortest time taken(in case of a tie in points)",
+        "Register" : "https://forms.gle/ExgTHDFGy7YfkLXK6"
+    },
+    {
+        "Name": "John the Ripper",
+        "icon": "fas fa-user-secret",
+        "Date":"Nov 1",
+        "preq": "Basic Knowledge of Internet, Social Mediaand a very Observant& CuriousNature",
+        "Desc" : "Yo ho ho! Get ready to start phishing in the ocean of Internet! Decode the hints given and crack the password in each round. You even get to place ransoms, like a true pirate. Savvy?",
+        "contact": ["Priya Ramesh", "9384212416", "Brunda","6304641454"],
+        "Round1": "Send a follow request to your victim's private Instagram account.Analyse the posts and stories to deduce intimate details him. Snoop around and find the link to a YouTube channel which will reveal crucial information pertinent to your victim. Using the information gathered, triggerthevacation response tohis e-mail IDby sending a blank e-mail.",
+        "Round2": "Take the clues that you get from the vacation responder and try to crack the password for the pdf that you get from it. After that, answer the questions asked, in order to checkhow well you have gathered information about the target.",
+        "Register" : "https://forms.gle/R9kd2hjqXSRWysxH9"
+    },
+    {
+        "Name": "Smartsite",
+        "icon": "fas fa-laptop-code",
+        "Date":"Oct 24 - Nov 1",
+        "preq": "Basics of web development",
+        "Desc" : "Hey virtual world creators! Would you like to build a smart website that would bring about a new era in construction? Do join us then, as we unite the construction in the virtual world to that in the real world!",
+        "contact": ["Chokkalingam", "9488227617", "Preethika","9398954930"],
+        "Round1": "All the participants will be given a problem statement with necessary requirements related to construction management. They have to build a website satisfying all those requirements within the given duration. Finally they have to send their designed website link. Judging criteria: Clean ui/ux, front end and backend functionality",
+        "Register": "https://forms.gle/jUdhNR2ySP2ox8RJ7"
+    },
+    {
+        "Name": "Clued in",
+        "icon": "fab fa-searchengin",
+        "Date": "Oct 24",
+        "preq": "Basic Civil knowledge",
+        "Desc" : "Follow the trail, pick up the breadcrumbs, process the clues - all over several online platforms! Here's a treasure hunt, which is one of a kind. Solve the mysteries to open the doors of the treasure chamber! Remember - clear vision holds the key!",
+        "contact": ["Nived", "9940664231", "Sivani","7989448039"],
+        "Round1": "The event consists of 1 round in which we include multiple levels. So each level will have some questions with appropriate clues. It is important to solve every clue,because only after cracking a level you will be directed to the other level. The event consists of several platforms in which these levels will be conducted. The platforms used for this event can be any social media platforms.",
+        "Register" : "https://forms.gle/NgU9hY2p6TksbvA16"
+    },
+    {
+        "Name": "Nuts and bolts",
+        "icon": "fas fa-cogs",
+        "Date": "Nov 1",
+        "preq": "Zoom and Google meet",
+        "Desc" : "have you ever wanted to participate in a game show? If yes, then team some is here with a fun-filled 3 round mechanical game show Nuts and bolts.This time, it's your brains that need the oiling! ",
+        "contact": ["Arshath", "9443621068", "Chandra","8885184347"],
+        "Round1": "Quiz session consisting of 25 questions related to the topic over a live meet.",
+        "Round2": "X points given and n questions asked. Bid from a range of (x/n) to (x/4n) points. If right, you’ll get twice the bid and if wrong, you lose twice the bid!",
+        "Round3": "Guess the machine!",
+        "Register" : "https://forms.gle/BL9F8qq66eKHeBrN7"
+    },
+    {
+        "Name": "Mechetrica",
+        "icon": "fas fa-cogs",
+        "Date":"Nov 1",
+        "preq": " Basic Mechanical and electrical knowledge",
+        "Desc" : "The last time when a mechanical engineer( shuri) and an electrical engineer (tony stark) teamed up, thanos was defeated! This time you just gotta defeat your opponents in a puzzle quest instead of a quest for infinity stones! Lubricate your minds and charge your body coz you are inevitable!!!",
+        "contact": ["Charita", "6302 683 835", "Bhuvana","73820 84685"],
+        "Round1": "Solve progressively tougher puzzles through this 5-round extravaganza and solve problems to succeed ultimately. Put your intellect to a test through this event and find out what both the problem and you are missing!",
+        "Register" : "https://forms.gle/GMJMPGd9cuKQkMUY7"
+    }
+    
+]

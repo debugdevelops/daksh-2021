@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Board</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/leader.css">
+</head>
+<body class="center">
+    <div id="particles-js"></div>
+    <div class="leaderboard">
+        <header>
+          <h1>Leader Board</h1>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Chromium_T-Rex-error-offline.png" alt="">
+        </header>
+        <div class="tbody">
+        <table>
+          <thead>
+            <tr>
+              <th class="rank"></th>
+              <th class="nick">Nickname</th>
+              <th class="sp">SCORE</th>
+            </tr>
+          </thead>
+          <tbody>
+             <% for(let i=0; i< data.length; i++) { %>
+               <tr>
+                <td class="rank"><%= i+1 %></td>
+                <td class="nick"><%= data[i].user %></td>
+                <td class="sp"><%= data[i].score %></td>
+              </tr>
+             <% } %>
+          </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+<script src="/scripts/particles.js"></script>
+<script src="/scripts/app.js"></script>
+</html>

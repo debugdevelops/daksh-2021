@@ -1,0 +1,66 @@
+.mission {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  padding: 0 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  gap: 50px;
+  margin-bottom: 5vh;
+}
+
+.mission > img {
+  flex: 1 300px;
+  max-width: min(600px, 100%);
+  object-fit: cover;
+  box-shadow: 15px 15px #32e37f;
+}
+
+.mission > div {
+  flex: 1 300px;
+}
+
+.daksh20 {
+  margin-top: 15vh;
+  text-align: center;
+  padding: 0 10%;
+  color: white;
+  font-size: 1.5em;
+}
+
+.daksh20 > p ~ p {
+  margin-top: 30px;
+}
+
+.video {
+  margin: 50px 0;
+  width: 60vw;
+  height: 33.75vw;
+}
+
+.banner {
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .mission {
+    padding: 5%;
+  }
+  .mission > div > p {
+    text-align: center;
+  }
+  .video {
+    width: 100%;
+    align-self: center;
+    height: 50.625vw;
+  }
+  .daksh20 {
+    margin-top: 5vh;
+  }
+  .daksh20 > p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,81 @@
+</div>
+<div class="container-fluid footer center">
+  <div class="footer__elements">
+    <div class="footer_icons">
+      <div class="icon__top">
+        <a href="/other" target="blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://medium.com/@promotions.daksh" target="blank"><i class="fab fa-medium"></i></a>
+        <a href="https://twitter.com/Daksh2k21" target="blank"><i class="fab fa-twitter-square"></i></a>
+      </div>
+      <div class="icon__bottom">
+        <a href="https://instagram.com/daksh2k21?igshid=1ueqi9a5eo3yb" target="blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.linkedin.com/company/dakshsastra" target="blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <form id="subscribe-form">
+      <div class="footer__subscribe center">
+        <div class="container-fluid" style="text-align: center">
+          <h4 style="font-weight: 400; margin-top: 20px;">Subscribe to our Newsletter</h4>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <div>
+            <button class="subscribe" id="subscribe-button" type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="footer__contact center">
+      <div>
+        <div class="footer_contact__info">
+          <p><i class="fas fa-envelope"></i></p>
+          <p>chairman.daksh@sastra.ac.in</p>
+        </div>
+        <div class="footer_contact__info">
+          <p><i class="fas fa-phone-alt"></i></p>
+          <p>+91 90477 72728</p>
+        </div>
+        <div class="footer_contact__info">
+          <p><i class="fas fa-map-marker-alt"></i></p>
+          <p>Sastra University, Tanjavur</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const form = document.getElementById("subscribe-form");
+  const submitButton = document.getElementById("subscribe-button");
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email');
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if(this.status == 200) {
+            email.value = "Subscribed successfully";
+            email.setAttribute("disabled", "true");
+            submitButton.style.display = "none";
+          } else {
+            email.value = "Oops, there was an error. Try again";
+          }
+        }
+    };
+    xhttp.open("POST", "/subscribe", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("email="+email.value);    
+  })
+</script>
+<script src="/scripts/particles.min.js"></script>
+<script src="/scripts/app.js"></script>
+<script src="https://kit.fontawesome.com/227143c808.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/scripts/index.js"></script>
+</body>
+</html>
+

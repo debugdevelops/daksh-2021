@@ -1,0 +1,206 @@
+.event-pop, .workshop-pop{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+.dispop{
+    display: flex;
+    background:black;
+    background:rgba(0,0,0,0.8);
+}
+
+.event-details{
+    position: relative;
+    background: linear-gradient(90deg, #26c785 0%, #38ef7d 100%);
+    min-height: 75%;
+    width: 70%;
+    display: flex;
+    padding: 40px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-box-shadow: 2px -2px 31px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -2px 31px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px -2px 31px -1px rgba(0,0,0,0.75);
+}
+
+.event-d-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 25px;
+}
+
+.event-d-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.event-d-name{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.event-d-name h1{
+    font-weight: 700; 
+    font-size: 3rem;
+}
+
+.event-d-icon{
+    margin-right: 20px;
+}
+
+.event-d-info{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.event-d-info i{
+    margin: 0 10px 0 0;
+}
+
+.event-contact{
+    display: flex;   
+}
+
+
+.event-contact div p{
+    font-weight: 700;
+    color: black;
+}
+
+
+.event-d-right h3{
+    font-weight: bold;
+}
+
+.event-d-right p{
+    text-align: justify;
+}
+
+.event-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.event-register button {
+    margin: 0 auto;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+.event-close{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background: none;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .event-details{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        margin: auto;
+        background: linear-gradient(90deg, #26c785 0%, #38ef7d 100%);
+        height: auto;
+        max-height: 80vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        overflow-y: scroll;
+    }
+
+        
+    .event-d-left{
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+    }
+
+    .event-d-right{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .event-d-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    
+    .event-d-name h1{
+        font-weight: 700; 
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .event-contact {
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }        
+    .event-close{
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        background: none;
+        font-size: 1.5rem;
+    }
+    
+    .event-d-info{
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 0px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+.event-register button {
+    margin: 0 auto ;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+}
+  

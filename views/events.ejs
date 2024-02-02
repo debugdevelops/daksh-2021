@@ -1,0 +1,82 @@
+<%- include("header.ejs") %>
+<link rel="stylesheet" href="/css/events.css" />
+<div
+  class="d-flex flex-column justify-content-center align-items-center"
+  style="min-height: 85vh"
+>
+  <div class="d-flex flex-wrap justify-content-around w-75">
+    <%- include("event.ejs", {event: "GAME OF GENES"}) %> <%-
+    include("event.ejs", {event: "PREDICT THE CULPRIT"}) %> <%-
+    include("event.ejs", {event: " ELECTRATHLON"}) %>
+  </div>
+  <div class="d-flex flex-wrap justify-content-around w-75">
+    <%- include("event.ejs", {event: "JOHN THE RIPPER"}) %>
+    <img src="/logo.png" height="100" width="100" id="logo-disappear" />
+    <style>
+      @media (max-width: 768px) {
+        #logo-disappear {
+          display: none;
+        }
+      }
+    </style>
+    <%- include("event.ejs", {event: "SMARTSITE"}) %>
+  </div>
+  <div class="d-flex flex-wrap justify-content-around w-75">
+    <%- include("event.ejs", {event: "CLUED IN"}) %> <%- include("event.ejs",
+    {event: "NUTS AND BOLTS"}) %> <%- include("event.ejs", {event:
+    "MECHETRICA"}) %>
+  </div>
+</div>
+<% for(var i=0; i < events.length; i++){ %>
+<div
+  class="event-pop animate__animated animate__fadeIn"
+  id="<%='event'+(i+1)%>"
+>
+  <div class="event-details">
+    <button class="event-close"><i class="far fa-times-circle"></i></button>
+    <div class="event-d-left">
+      <div class="event-d-name">
+        <h2 class="event-d-icon"><i class="<%= events[i].icon %>"></i></h2>
+        <h1><%= events[i].Name %></h1>
+      </div>
+      <p class="event-d-info">
+        <i class="far fa-calendar-alt"></i><%= events[i].Date %>
+      </p>
+      <p class="event-d-info"><%= events[i].Desc %></p>
+      <p class="event-d-info">Prerequisite: <%= events[i].preq %></p>
+      <div class="event-contact">
+        <div style="margin-right: 20px">
+          <p><%= events[i].contact[0] %></p>
+          <p><%= events[i].contact[1] %></p>
+        </div>
+        <div>
+          <p><%= events[i].contact[2] %></p>
+          <p><%= events[i].contact[3] %></p>
+        </div>
+      </div>
+    </div>
+    <div class="event-d-right">
+      <div>
+        <h3>Round 1</h3>
+        <p><%= events[i].Round1 %>.</p>
+      </div>
+      <% if(events[i].Round2){ %>
+      <div>
+        <h3>Round 2</h3>
+        <p><%= events[i].Round2 %></p>
+      </div>
+      <% } %> <% if(events[i].Round3){ %>
+      <div>
+        <h3>Round 3</h3>
+        <p><%= events[i].Round3 %></p>
+      </div>
+      <% } %>
+      <div class="event-register">
+        <a href="<%= events[i].Register %>" target="blank"
+          ><button>Register</button></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<% } %> <%- include("footer.ejs") %>

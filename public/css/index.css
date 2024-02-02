@@ -1,0 +1,381 @@
+/* Copyright 2013 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.enter-name{
+  display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  padding: 25px;
+  height: 225px;
+  border-radius: 25px;
+  width: 300px;
+  z-index: 9999999999;
+  background-color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.enter-name button{
+  outline: none;
+  padding: 10px 20px;
+  float: right;
+  margin: 20px 0 0 0 ;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(90deg, #26c785 0%, #38ef7d 100%);
+}
+
+.enter-name input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  border-bottom: solid black 2px;
+}
+
+
+.enter-name input:focus{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  border-bottom: solid black 2px;
+}
+
+
+.enter-name p{
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.clock{
+  width: 100%;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dis-col{
+  flex-direction: column;
+}
+
+.game-buttons, .game-buttons-mobile{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-buttons button{
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(90deg, #26c785 0%, #38ef7d 100%);
+}
+
+
+.game-buttons-mobile button{
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(90deg, #26c785 0%, #38ef7d 100%);
+}
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: 7rem;
+  right: -86px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: none;
+}
+
+#main-content{
+  display: none;
+}
+
+.icon {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.icon-offline {
+  content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Offline page */
+
+.offline .interstitial-wrapper {
+  color: #2b2b2b;
+  font-size: 1em;
+  line-height: 1.55;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.offline .runner-container {
+  height: 150px;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 44px;
+}
+
+.offline .runner-canvas {
+  height: 150px;
+  max-width: 600px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.offline .controller {
+  background: rgba(247, 247, 247, .1);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+#offline-resources {
+  display: none;
+}
+
+.game-buttons-mobile{
+  display: none;
+}
+
+
+#particles-js{
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.credits{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  margin: 35px 0px;
+  padding: 0px 25px;
+}
+
+.developers-name{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.designers, .developers{
+  width: 250px;
+}
+
+.developers-name a{
+  font-weight: 700;
+  color: grey;
+}
+
+
+.developers-name a:hover{
+  font-weight: 700;
+  color: white;
+}
+
+
+@media (max-width: 420px) {
+  .suggested-left > #control-buttons, .suggested-right > #control-buttons {
+    float: none;
+  }
+  .snackbar {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-height: 350px) {
+  h1 {
+    margin: 0 0 15px;
+  }
+  .icon-offline {
+    margin: 0 0 10px;
+  }
+  .interstitial-wrapper {
+    margin-top: 5%;
+  }
+  .nav-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 736px) and (orientation: landscape) {
+  .offline .interstitial-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media (max-height: 320px) and (orientation: landscape) {
+  .icon-offline {
+    margin-bottom: 0;
+  }
+  .offline .runner-container {
+    top: 10px;
+  }
+}
+
+@media (max-width: 240px) {
+  .interstitial-wrapper {
+    overflow: inherit;
+    padding: 0 8px;
+  }
+}
+
+ 
+@media only screen and (max-width: 600px) {
+  .credits{
+    visibility: hidden;
+  }
+  .dis-col {
+    flex-direction: column;
+    width: 100vh;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.75);
+  }
+  .Time-remain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    transform: scale(0.7);
+    margin-left: 25px;
+  }
+  .interstitial-wrapper img{
+    width: 75%;
+  }
+  .flip-clock-divider .flip-clock-label {
+    position: absolute;
+    top: 7rem;
+    font-size: 1.25rem;
+    right: -100px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: none;
+  }
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -110px;
+  }
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -105px;
+  }
+  .game-buttons{
+    visibility: hidden;
+  }
+  .game-buttons-mobile{
+    visibility: visible;
+    display: flex;
+    z-index: 9999999;
+    position: absolute;
+    top: 55vh;
+  }
+}
